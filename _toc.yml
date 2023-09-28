@@ -2,8 +2,29 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+root: root
+parts:
+    - caption: Intro and Basics
+      chapters:
+        - file: parts/1_intro/intro
+        - file: parts/1_intro/hiring_process
+    # - caption: Getting a Job
+    #   chapters:
+    #     - file: parts/2_getting_a_job/numbers-game
+    #     - file: parts/2_getting_a_job/resume
+    #     - file: parts/2_getting_a_job/the-golden-rule
+    #     - file: parts/2_getting_a_job/be-a-person
+    #     - file: parts/2_getting_a_job/test_tasks
+    #     - file: parts/2_getting_a_job/cases
+    # - caption: Interviewing
+    #     chapters:
+    #       - file: parts/3_interviewing/behavioral_interview
+    #       - file: parts/3_interviewing/technical_interview
+    #       - file: parts/3_interviewing/cases
+    #       - file: parts/3_interviewing/fuckups
+    # - caption: Negotiations
+    #   chapters:
+    #     - file: parts/4_negotations/negotiate
+    #     - file: parts/4_negotations/theory
+    #     - file: parts/4_negotations/strategies
+    #     - file: parts/4_negotations/cases
