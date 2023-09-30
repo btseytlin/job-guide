@@ -8,9 +8,9 @@ parts:
       chapters:
         - file: parts/1_intro/intro
         - file: parts/1_intro/hiring_process
-    # - caption: Getting a Job
-    #   chapters:
-    #     - file: parts/2_getting_a_job/numbers-game
+    - caption: Getting a Job
+      chapters:
+        - file: parts/2_getting_a_job/numbers-game
     #     - file: parts/2_getting_a_job/resume
     #     - file: parts/2_getting_a_job/the-golden-rule
     #     - file: parts/2_getting_a_job/be-a-person
