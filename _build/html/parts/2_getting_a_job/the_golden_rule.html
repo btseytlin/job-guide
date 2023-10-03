@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Золотое правило &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'parts/2_getting_a_job/the_golden_rule';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Резюме" href="resume.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../root.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../root.html">
+                    Методичка: Поиск Работы в IT
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Intro and Basics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../1_intro/intro.html">Вступление</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_intro/hiring_process.html">Процесс найма</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting a Job</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="numbers_game.html">Numbers Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resume.html">Резюме</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Золотое правило</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fparts/2_getting_a_job/the_golden_rule.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/parts/2_getting_a_job/the_golden_rule.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Золотое правило</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Будь человеком</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Можно говорить “нет”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">А что насчет компаний?</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Золотое правило<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p><strong>Общайся с нанимающими людьми так, будто вы уже коллеги.</strong></p>
+<p>Можно сказать, что все остальные советы в этой книге это частные случаи применения этого принципа.</p>
+<section id="id2">
+<h2>Будь человеком<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>Общаться с людьми как с коллегами означает быть ответственным. Ведь ваша задача не просто пролезть в компанию любой ценой. При удачном исходе вам потом с этими людьми работать, поэтому строить отношения нужно сразу с подачи резюме. Не опаздывай, не пропадай, не токси, не ври, не трать чужое время впустую. Предупреждай, если что-то идет не-так. Будь открыт, говори прозрачно. Будь человеком.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Личный пример про открытость. При поиске работы в Марте 2022 я явно говорил каждой компании, чего я хочу: “Развитие в ML/DL, больше ответственности, удаленка в приоритете, и мне очень важны деньги, поэтому я планирую собрать все офферы к определенной дате, посоветоваться с близкими и выбирать самое лучшее предложение.” Когда я получил офер от одной из компаний, я честно говорил им, что хочу посмотреть другие опции. Я держал их в курсе и назначил дату, к которой я точно дам им ответ. Позже я просил их подвинуть эту дату, потому что другие компании тянули с решением. С пометкой, что, если для них это неприемлемо, я приму решение сейчас, как обещал. Они согласились и никто не был расстроен.</p>
+</div>
+</section>
+<section id="id3">
+<h2>Можно говорить “нет”<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>С другой стороны, человечность подразумевает гибкость. Вы можете переносить встречи с коллегами? Значит и здесь можете. Конечно, как и с коллегами, все должно быть в разумных пределах.</p>
+<p>Так как вы человек, вы можете отказывать и договариваться. Собеседования это не экзамены с определенным протоколом, а отношения между людьми.</p>
+<p>Несколько примеров:</p>
+<ol class="arabic simple">
+<li><p>Компания дала мне алгоритмическое задание до всех собеседований. Я открыл, увидел задачу на давно забытое динамическое программирование и не смог заставить себя это делать. Я написал им имейл, где сказал, что я не готов на литкод до собеседований и попросил пропустить этот этап. Они согласились и мы перешли сразу к собеседованию.</p></li>
+<li><p>Другая компания дала мне муторное тестовое задание. Оно было интересным, но у меня не было на него ни сил, ни времени. Я написал им об этом имейл и подробно рассказал, как я бы делал это задание, если бы у меня было время. Попросил пропустить этот этап. Они согласились.</p></li>
+<li><p>Компания потребовала на последних этапах собеседований некое сочинение о моей мотивации и три референса от других людей. По их словам они были почти готовы сделать предложение и это был предпоследний этап отбора. Предложение было бы полезно для переговоров с другими компаниями, но я точно знал, что не хочу в эту компанию. Не хотел вводить людей в заблужение, а собирать референсы не стоило усилий. Я попрощался с ними.</p></li>
+<li><p>Другая компания дала мне на первом этапе психологический тест и какие-то головоломки. Я написал им, что вижу, что головоломки были составлены с любовью, но не готов тратить на них 2-4 часа. Мне поставили встречу с HR, которая попыталась убедить меня пройти тест и объяснила, что без него никак. Я отказался, мы распрощались.</p></li>
+<li><p>Однажды я заигрался в Цивилизацию до поздней ночи и очень мало спал. На следующий день у меня было важное собеседование. Утром я отправил имейл, где попросил перенести собеседование, так как плохо спал, и опасаюсь, что не смогу себя проявить. Собеседование перенесли, позже я прошел его хорошо и в конце компания сделала мне предложене.</p></li>
+</ol>
+<p>Вы будете удивлены, сколько неприятных этапов можно пропустить, если просто попросить.</p>
+</section>
+<section id="id4">
+<h2>А что насчет компаний?<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<p>Золотое правило распространяется и на компанию-нанимателя.</p>
+<p>Почему-то главенствует менталитет, что работа это ресурс, который есть у компаний, а работник пытается его у них выудить. Они создают правила, а ты ходишь по струнке, как бы их не спугнуть. Нужно понять: все наоборот. Работа это ваш ресурс, а компания пытается его купить. Вам нужно договориться об условиях сотрудничества. Это взаимовыгодные и равноправные контрактные отношения.</p>
+<p>Будь человеком: цени свои интересы. Ожидайте к себе в ответ достойного отношения и будьте готовы уйти. Вы проверяете их точно так же, как они вас. Не стоит работать в компании, если уже на этапе собеседований ее работники опаздывают, пропадают, токсят, врут, и так далее.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Конечно, если вы умираете с голоду, то сойдет любая работа, с которой надо будет сразу уходить на хорошую.  Но, если у вас есть опции, вы должны всеми силами избегать плохой работы.</p>
+</div>
+<p>Я выделяю для себя три категории работ:</p>
+<ol class="arabic simple">
+<li><p>Крутая работа</p></li>
+<li><p>Лучше, чем ничего.</p></li>
+<li><p>Хуже, чем ничего.</p></li>
+</ol>
+<p>Третья категория хуже, чем не работать вообще. Вы должны избегать таких работ. Отгрызите себе ногу, но спаситесь от такой участи. На работе вы проведете большую часть времени в следующие N лет, поэтому  все это время. Не работайте с мудаками, себе дороже.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Личный пример. Представители одной из компаний порядочно меня затоксили: Борис, кажется, у вас недостаточно мотивации, чтобы работать в high-pressure environment и стремиться к великому, да и математику вы что-то плохо знаете. Собеседующий опоздал, а потом, убежал в середине звонка на следующую встречу, так и не дослушав мой рассказ про проект, который сам просил подготовить. Я не пошел к ним и не капли не пожалел. Спустя полгода я случайно познакомился с инженером из этой компании, который рассказал, что недавно уволился, так как устал от “вечного хакатона.” По его словам компании осталось недолго, потому что с ним ушли почти все ключевые разработчики.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./parts/2_getting_a_job"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="resume.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Резюме</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Будь человеком</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Можно говорить “нет”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">А что насчет компаний?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

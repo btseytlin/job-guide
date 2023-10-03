@@ -12,7 +12,7 @@ parts:
       chapters:
         - file: parts/2_getting_a_job/numbers_game
         - file: parts/2_getting_a_job/resume
-    #     - file: parts/2_getting_a_job/the_golden_rule
+        - file: parts/2_getting_a_job/the_golden_rule
     #     - file: parts/2_getting_a_job/test_tasks
     #     - file: parts/2_getting_a_job/cases
     # - caption: Interviewing
