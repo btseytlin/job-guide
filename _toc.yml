@@ -22,9 +22,9 @@ parts:
     #       - file: parts/3_interviewing/technical_interview
     #       - file: parts/3_interviewing/cases
     #       - file: parts/3_interviewing/fuckups
-    # - caption: Negotiations
-    #   chapters:
-    #     - file: parts/4_negotations/negotiate
+    - caption: Negotiations
+      chapters:
+        - file: parts/4_negotations/negotiate
     #     - file: parts/4_negotations/theory
     #     - file: parts/4_negotations/strategies
     #     - file: parts/4_negotations/cases
