@@ -19,7 +19,7 @@ parts:
         chapters:
           - file: parts/3_interviewing/interviews
           - file: parts/3_interviewing/behavioral_interview
-    #       - file: parts/3_interviewing/technical_interview
+          - file: parts/3_interviewing/technical_interview
     #       - file: parts/3_interviewing/cases
     #       - file: parts/3_interviewing/fuckups
     - caption: Negotiations
