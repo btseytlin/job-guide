@@ -28,4 +28,4 @@ parts:
         - file: parts/4_negotiations/negotiate
         - file: parts/4_negotations/tricks
         - file: parts/4_negotations/theory
-    #     - file: parts/4_negotations/cases
+        - file: parts/4_negotations/case
