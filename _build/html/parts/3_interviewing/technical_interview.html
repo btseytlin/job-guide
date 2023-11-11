@@ -1,0 +1,637 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Технические собеседования &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'parts/3_interviewing/technical_interview';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="System design" href="system_design.html" />
+    <link rel="prev" title="Поведенческие собеседования" href="behavioral_interview.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../root.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../root.html">
+                    Методичка: Поиск Работы в IT
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Intro and Basics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../1_intro/intro.html">Вступление</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_intro/hiring_process.html">Процесс найма</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting a Job</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../2_getting_a_job/numbers_game.html">Numbers Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_getting_a_job/resume.html">Резюме</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_getting_a_job/the_golden_rule.html">Золотое правило</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_getting_a_job/test_tasks.html">Тестовые задания</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interviewing</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="interviews.html">Собеседования</a></li>
+<li class="toctree-l1"><a class="reference internal" href="behavioral_interview.html">Поведенческие собеседования</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Технические собеседования</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system_design.html">System design</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Negotiations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../4_negotiations/negotiate.html">Торгуйтесь!</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fparts/3_interviewing/technical_interview.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/parts/3_interviewing/technical_interview.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Технические собеседования</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Структура технических собеседований</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Почему технические собеседования именно такие</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Как проходить технические собеседования</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Рассказ о своем опыте</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Технические вопросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Решение алгоритмических задач</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Технические собеседования<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>На технических собеседованиях проверяют вашу способность приносить пользу на будущей работе.</p>
+<section id="id2">
+<h2>Структура технических собеседований<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>Технические собеседования в разных компаниях следуют достаточно похожему сценарию. Наиболее типичная структура технического собеседования:</p>
+<ol class="arabic simple">
+<li><p>Введение, короткий разговор о вашем опыте. Вопросы про технологии с которыми вы работали.</p></li>
+<li><p>Технические вопросы.</p></li>
+<li><p>Решение задачи или кейса.</p></li>
+<li><p>Ваши вопросы.</p></li>
+</ol>
+<p>Разговор о вашем опыте как правило проверяет, насколько вы разбираетесь в нужных компании технологиях или подходах. На этом этапе вас спросят о том, какие задачи вы решали, какие приняли решения и почему. Последняя часть очень важна: собеседующему важно увидеть как выглядит ваш процесс принятия решений.</p>
+<p>Технические вопросы это как правило вопросы в закрытой форме про конкретные технологии. Ответы на эти вопросы вы или знаете, или нет. К счастью как правило они типовые и ответы можно подготовить заранее, так как в интернете полно списков таких вопросов (и собеседующие часто берут их из этих же списков). К тому же эти вопросы обычно не являются главным критерием принятия решения.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Например, для разработчика Python часто встречаются такие:</p>
+<ol class="arabic simple">
+<li><p>Что такое декоратор в Python?</p></li>
+<li><p>Что такое GIL и зачем он нужен?</p></li>
+<li><p>Какие вы знаете магические методы?</p></li>
+</ol>
+</div>
+<p>Решение задачи или кейса это самый важный этап собеседования.</p>
+<p>Задача это как правило алгоритмическая головоломка. Вам требуется написать код решения под наблюдением интервьюера, без возможности исполнять и “дебажить код”. Интервьюер ожидает, что вы не только решите задачу, но и покажете ход своих рассуждений.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Пример простой задачи: two sum. Дан массив чисел и число. Нужно найти два числа в массиве, которые в сумме дают это число.</p>
+</div>
+<p>Под кейсом я понимаю задачу открытого вида, которая не имеет однозначного решения и требует совместной с собеседующим проработки.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>У разработчиков этот типа задач называют system design. Пример задачи: “Как бы вы спроектировали сервис стриминга видео?”</p>
+</div>
+</section>
+<section id="id3">
+<h2>Почему технические собеседования именно такие<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>У технических собеседований очень плохая репутация. Люди часто жалуются, что технические собеседования похожи на лотерею, несправедливы и не дают никакой информации о том, как вы будете работать. Каждый рано или поздно встречается с ситуацией, когда он точно подходит на позицию, но заваливает собеседование на какой-то не имеющей к ней отношения задаче. Почему работодатели продолжают делать такие собеседования?</p>
+<p>Некоторые типичные вопросы кандидатов:</p>
+<ol class="arabic simple">
+<li><p>Зачем нужны алгоритмические задачи не имеющие отношения к работе?</p></li>
+<li><p>Почему компания просто не может посмотреть как я пишу код, например на Github?</p></li>
+<li><p>Почему компания не может просто обсудить мой опыт и понять, что я хороший специалист? Ведь у меня есть резюме, опыт и даже рекомендации.</p></li>
+</ol>
+<p>Дело в том, что очень тяжело оценить технического специалиста за сорок пять минут собеседования. Вот какие ограничения есть у компаний:</p>
+<ul class="simple">
+<li><p>В воронке сотни кандидатов, поэтому невозможно тратить на каждого много времени.</p></li>
+<li><p>Необходимо понять, что человек не только красиво говорит, но и умеет программировать.</p></li>
+<li><p>Во время собеседования нет времени погружаться в контекст, поэтому очень тяжело рассматривать близкую к реальной работе задачу.</p></li>
+<li><p>Необходимо собеседовать кандидатов параллельно. Для этого требуется несколько собеседующих. У них могут быть разные подходы, поэтому нужно построить стандартизированный способ оценки кандидатов.</p></li>
+</ul>
+<p>Я много раз пытался придумать более эффективный способ собеседований, который одновременно удовлетворяет всем ограничения. И не смог. Если у вас получится, то вы можете сделать революцию в HR. До тех пор мы имеем такие выводы:</p>
+<ul class="simple">
+<li><p>Поведенческие собеседования и рассказ о вашем опыте позволяют понять, что вы не лжец и не псих. Так же помогают оценить ваш опыт.</p></li>
+<li><p>Алгоритмические задачи позволяют проверить навыки программирования, знание подходов к решению задач программиста и наличие общей базовой подготовки в computer science. Да, это не отражает реальной работы, но это лучшее, что есть.</p></li>
+<li><p>Кейсы позволяют понять вашу способность решать масштабные задачи, вашу степень знакомства с подходами в индустрии.</p></li>
+</ul>
+<p>Таким образом технические собеседования являются тяжелым компромиссом между естественными ограничениями. Ваша задача как кандидата: перестать бороться с действительностью. Бесполезно. Нужно принять правила игры и научиться проходить собеседования. К счастью это не так трудно, как может показаться.</p>
+</section>
+<section id="id4">
+<h2>Как проходить технические собеседования<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<section id="id5">
+<h3>Рассказ о своем опыте<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<p>Рассказ на техническом собеседовании отличается от рассказа на поведенческом собеседовании.</p>
+<p>Здесь в первую очередь хотят слышать о вашем техническом опыте: с чем работали, какие задачи решали, какие принимали решения и почему. Поэтому вам стоит начать с конца и говорить о том, о чем вы бы хотели поговорить подробнее. Если вы делали сайты на Django и уверенно себя чувствуете в этом, то стоит говорить про это. Постарайтесь донести целостный посыл: вот в чем я хорошо разбираюсь и вот что мне интересно.</p>
+<p>Самое важное: подготовьте свой рассказ заранее.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Вот структура, которой я сам придерживаюсь на данный момент.</p>
+<ol class="arabic simple">
+<li><p>Я тимлид ML в Planet Farms, моя команда занимается компьютерным зрением и ML Engineering для фабрик. В текущей комании я построил ML инфраструктуру с нуля.</p></li>
+<li><p>У меня богатый опыт software engineering, data engineering, а так же есть опыт в ML исследованиях. Я и ML делаю, и пишу хороший код.</p></li>
+<li><p>Я ищу &lt;вставить почему я ищу работу, чем хочу заниматься и куда расти&gt;</p></li>
+<li><p>О чем вы хотите услышать подробнее?</p></li>
+</ol>
+</div>
+</section>
+<section id="id6">
+<h3>Технические вопросы<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<p>Здесь всё решает подготовка. Вопросы скорее всего задаются или исходя из вашего опыта, или исходя из требований вакансии.</p>
+<p>Ответы на типичные вопросы связанные с вашим опытом вам в любом случае нужно заранее подготовить и выучить.</p>
+<p>С требованиями к вакансии сложнее. Перед собеседованием стоит сделать небольшую подготовку, насколько позволяет время: посмотреть на вакансию и подумать, о чем могут спросить. Например, если компании требуется Python разработчик со знаниями Postgres, то стоит как минимум повторить не только вопросы про Python, но и SQL, а так же общие принципы работы с базами данных. Вам не нужно становиться экспертом, но сделайте так, чтобы вы могли ответить на базовые вопросы и вас не застали совсем “безоружным.”</p>
+<p>Ваша цель: произвести впечатление, что вы понимаете основные принципы всего необходимого, а в деталях сможете разобраться.</p>
+</section>
+<section id="id7">
+<h3>Решение алгоритмических задач<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<p>Решение алгоритмических задач это самый сложный этап собеседования требующий наибольшей подготовки.</p>
+<p>К счастью можно сильно “прокачать” свой навык просто используя верную структуру ответа. Я предлагаю свой алгоритм решения алгоритмических задач, созданный на основе опыта на обоих сторонах собеседованиий:</p>
+<ol class="arabic simple">
+<li><p>Прочитать условие и задать уточняющие вопросы.</p></li>
+<li><p>Написать несколько тест кейсов, чтобы ещё раз убедиться, что вы поняли условие. Прямо комментариями в коде берем и пишем тесты в формате “входные данные - ожидаемый результат”. В некоторых компаниях пишет человек тесты или нет даже является одним из критериев оценки.</p></li>
+<li><p>Проговорить свои наблюдения вслух и спросить у интервьюера, верно ли вы поняли задание и его ограничения. Не страшно, если нет, ведь интервьюеру важно понять, как вы думаете.</p></li>
+<li><p>Проговорить вслух наивное решение проблемы. Как правило это полный перебор вариантов. Обозначить его алгоритмическую сложность (чаще всего O(n^2)) и объяснить, почему вам кажется, что можно найти более оптимальное решение. Например, укажите какие вычисления делаются дваждыю</p></li>
+<li><p>Подумать и проговорить оптимальное решение проблемы. Убедиться у интервьюера, что вы нашли верное решение и спросить разрешения приступать к реализации. Только после утвердительного ответа переходить дальше.</p></li>
+<li><p>Написать код решения.</p></li>
+<li><p>Проверить код решения, мысленно проверить, выполняются ли все тесты. Исправить ошибки: они точно найдутся.</p></li>
+<li><p>Сообщить, что решение готово.</p></li>
+</ol>
+<p>Как избежать самых типичных ошибок:</p>
+<ol class="arabic simple">
+<li><p>Убедитесь, что вы правильно поняли условие. Много раз на моих собеседованиях кандидат сначала писал код, а в середине собеседования выяснялось, что он не понял условия.</p></li>
+<li><p>Не бросайтесь сразу писать код. <strong>Никогда</strong> не пишите код до того, как интервьюер подтвердит, что вы нашли верное решение. Пожалуй самая частая ошибка это потратить все время собеседования на реализацию неверного решения.</p></li>
+<li><p>Не молчите. Не пытайтесь решить задачу в уме. Рассуждайте вслух. Интервьюер вам не враг. Лучше написать решение с подсказкой, чем не написать вообще.</p></li>
+<li><p>Проверяйте свой код!</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./parts/3_interviewing"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="behavioral_interview.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Поведенческие собеседования</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="system_design.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">System design</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Структура технических собеседований</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Почему технические собеседования именно такие</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Как проходить технические собеседования</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Рассказ о своем опыте</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Технические вопросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Решение алгоритмических задач</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

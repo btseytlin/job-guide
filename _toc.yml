@@ -12,19 +12,20 @@ parts:
       chapters:
         - file: parts/2_getting_a_job/numbers_game
         - file: parts/2_getting_a_job/resume
+        - file: parts/2_getting_a_job/optimize_resume
         - file: parts/2_getting_a_job/the_golden_rule
         - file: parts/2_getting_a_job/test_tasks
     #   - file: parts/2_getting_a_job/cases
     - caption: Interviewing
-        chapters:
-          - file: parts/3_interviewing/interviews
-          - file: parts/3_interviewing/behavioral_interview
-          - file: parts/3_interviewing/technical_interview
-          - file: parts/3_interviewing/system_design
-    #       - file: parts/3_interviewing/fuckups
+      chapters:
+        - file: parts/3_interviewing/interviews
+        - file: parts/3_interviewing/behavioral_interview
+        - file: parts/3_interviewing/technical_interview
+        - file: parts/3_interviewing/system_design
+  #       - file: parts/3_interviewing/fuckups
     - caption: Negotiations
       chapters:
-        - file: parts/4_negotations/negotiate
-    #     - file: parts/4_negotations/theory
-    #     - file: parts/4_negotations/strategies
+        - file: parts/4_negotiations/negotiate
+        - file: parts/4_negotations/tricks
+        - file: parts/4_negotations/theory
     #     - file: parts/4_negotations/cases

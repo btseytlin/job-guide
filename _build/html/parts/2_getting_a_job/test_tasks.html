@@ -1,0 +1,568 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Тестовые задания &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'parts/2_getting_a_job/test_tasks';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Собеседования" href="../3_interviewing/interviews.html" />
+    <link rel="prev" title="Золотое правило" href="the_golden_rule.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../root.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../root.html">
+                    Методичка: Поиск Работы в IT
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Intro and Basics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../1_intro/intro.html">Вступление</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_intro/hiring_process.html">Процесс найма</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting a Job</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="numbers_game.html">Numbers Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resume.html">Резюме</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the_golden_rule.html">Золотое правило</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Тестовые задания</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interviewing</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../3_interviewing/interviews.html">Собеседования</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_interviewing/behavioral_interview.html">Поведенческие собеседования</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_interviewing/technical_interview.html">Технические собеседования</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_interviewing/system_design.html">System design</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Negotiations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../4_negotiations/negotiate.html">Торгуйтесь!</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fparts/2_getting_a_job/test_tasks.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/parts/2_getting_a_job/test_tasks.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Тестовые задания</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Личный пример: одно тестовое задание</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">100%</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">150%</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Тестовые задания<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>Первое правило тестовых заданий: не делать тестовые задания. Тестовые задания связывают вас по рукам и ногам не облагая компанию какими-либо обязательствами. Пока вы тратите выходные на бесплатную работу компания перелопачивает десятки кандидатов, а затем вы получаете шаблонный отказ. В среднем тестовые задания это потеря времени, потому что их не проверяют.</p>
+<p>Я много раз встречал такую тактику: после отсева резюме, но до собеседований, компания сплошняком раздает тестовое задание всем кандидатам. Работает просто как галочка: собеседуют всех, кто отправил задание. Отличная проверка на мотивацию, неумение ценить свое время или отчаяние.</p>
+<p>Если делать все тестовые задания, то в лучшем случае будет один вымученный оффер. Лучше потратить время на получение множества опций.</p>
+<p>При этом оба моих оффера в этот поиск работы пришли через тестовые задания, и в позапрошлый поиск работы тоже. Потому что есть редкие исключения из первого правила.</p>
+<p>В более строгом виде первое правило можно сформулировать так: не делать тестовое задание до собеседований, если оно занимает слишком много времени, если оно не интересное или если не очень хочется в эту компанию.</p>
+<p>Иногда работает предложить вместо тестового задания разобрать ваш публично доступный проект на ту же тему. Всегда предлагайте это если тестовое задание не стоит усилий. В худшем случае вам просто скажут нет.</p>
+<p>Тестовое задание обязательно стоит делать когда все звезды выстроились в ряд: оно интересное, есть время и компания вам нравится.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Однажды компания оплатила мне выполнение тестового задания. Но это просто фантастика, считайте, что так не бывает.</p>
+</div>
+<p>Лучшая ситуация это когда тестовое задание заменяет алгоритмы и другие этапы технических собеседований. Вы присылаете задание, а на собеседовании разбираете решение. В тысячу раз лучше решения алгоритмических задач, потому что они как билеты на экзамене. Попалось то, что знаешь - сдал, садись, пять. Большой фактор случайности. Тестовое задание позволяет вам реально подготовиться и вложиться там, где это имеет смысл.</p>
+<p>Второе правило тестовых заданий: если решили делать, то делайте на 150%. В предыдущих частях было много сказано про экономию сил и времени. Вся экономия времени была не ради того, чтобы успевать полежать на диване, а чтобы в нужный момент выложиться по полной. Важно сделать больше, чем требуется, чтобы обойти остальных кандидатов. В идеале показать своим решением понимание проблемы компании, ведь тестовые задания часто связаны с позицией, на которую вас нанимают. Решение должно сообщать не “я могу решить эту задачу”, а “я могу решить ваши проблемы.”</p>
+<section id="id2">
+<h2>Личный пример: одно тестовое задание<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>Расскажу как в Марте 2022 я делал тестовое задание для компании RogaAndKopyta (не поверите, но название изменено).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Это задание на ML инженера, поэтому мне трудно будет избежать терминологии. Если вы не разбираетесь в ML, это не страшно: постарайтесь ухватить суть подхода к решению, а именно то, что в этом случае я старался перевыполнить задачу.</p>
+</div>
+<p>У меня был один из лучших опытов собеседований с этой компанией. Полная прозрачность, отношение на равных, очень приятные люди и никакого булщита. На собеседовании с СЕО я испытал такое доверие, что нарушил все правила поведения и сказал, что на самом деле точно не знаю чего хочу. Тогда мне были интересны и исследования, и инженерия, и бизнес. Не делайте так. Несмотря на это, они все равно сделали мне оффер. Настолько у нас с ними все хорошо складывается.</p>
+<p>Компания занимается рекомендациями размеров одежды для крупного маркетплейса. При выборе размера покупатель заполняет небольшой опрос: обычно ношу 36-ой, рост 156, бывает жмет в плечах. В ответ получает ML рекомендацию: покупай 36-ой. Это растит конверсию в покупку.</p>
+<p>На собеседовании мы с СТО сразу нашли общий язык. Он рассказал, что под каждый магазин они тренируют модель руками. Вначале бывает очень мало данных от магазинов. Я сразу понял: “Значит проблема в том, что так масштабироваться невозможно. Нужно подключать магазины автоматически и решить проблему холодного старта.” СТО очень понравилось, что я ухватил суть проблемы. Я сказал, что могу это сделать.</p>
+<section id="id3">
+<h3>100%<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>После ряда собеседований они прислали мне тестовое задание. CSV с 300 ответами покупателей на опрос. Id продукта, категория, рост покупателя, обычно покупаемый размер, ответы в каких местах обычно жмет, какой размер в итоге купил, какой фидбек оставил, какие были проблемы с купленной вещью. Задача: дать рекомендации.</p>
+<p>Первая проблема, что нет таргета (целевой переменной). Мы не знаем какой размер человеку действительно подходит, знаем только какой он купил. Вторая проблема: ничего не учится. Я подошел к задаче как к классификации, где рекомендуемый размер это класс. Попробовал для начала предсказывать купленный размер. Логистическая регрессия, простая модель классификации, просто не сходилась.</p>
+<p>Еще в начале подумал, что влияют только два признака: обычно покупаемый размер и рост. Визуализация это подтвердила: какой человек обычно носит размер, такой и покупает. Данных нет, таргета нет, признаков нет, как решать?</p>
+<p>Я уже хотел бросить это тестовое. Но решил поиграть в игру: что если бы я уже работал в этой компании? Приходит ко мне бизнес, и что я ему скажу? “Ой тут ничего не сделать, я сдаюсь”? Стало интересно, что же можно выжать из того, что дали.</p>
+<p>ML не обучается. Максимум можно сделать какую-то таблицу: с таким обычным размером, таким ростом и прочими ответами как у тебя люди чаще всего покупают эту вещь с размером Х. Не руками же эту таблицу составлять: и оверфит большой, и обновлять трудно, и проблему масштабирования так не решить. Нужна обучаемая автоматическая таблица.</p>
+<p>И я как раз знаю такую! Алгоритм Random Forest. Раскладывает обучающую выборку по полочкам. Не переобучается. Экстраполировать не умеет, а нам как раз не нужно. Уммет обратаывать все виды признаков и даже никакого препроцессинга не надо. На train-test split данных нет, а RF как раз дает бесплатно out-of-bag оценку тестовой ошибки. Обучил на предсказание купленного размера: красота, около 0.7 OOB f1-score. Но как же рекомендовать не тот размер, что обычно покупают, а тот, что подойдет? Придумал трюк: выкидываем все примеры, где у людей был негативный фидбек, на остальных обучаем. Получаем модель, которая говорит “люди с твоими параметрами, которые оказались довольны, купили Х.”</p>
+<p>Попробовал, изучил результаты предсказаний на недовольных покупкой, которые не попали в трейн сет модели. Нашел несколько крутых случаев: человек купил размер Х, написал фидбек, что вещт оказалась маловата. Рекомендация модели: стоило покупать на размер больше. Вау, полезные рекомендации, отпад!</p>
+<p>Но это только начало, потому что это выполнение на сто процентов. Надо на стопятьдесят. Что еще можно выжать? Я задумался, что для эффективности рекомендаций важно доверие к ним. С чего тебе верить черному ящику, который говорит покупать 50-ый размер?</p>
+</section>
+<section id="id4">
+<h3>150%<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p>Как минимум можно использовать вероятности классификатора. Мы на 95% уверены, что вам подойдет размер 50. Можно использовать то, сколько людей попало в лист. 567 человек из 1000 похожих на вас купили размер 50 и были довольны. Неплохо, но можно еще лучше: SHAP feature importance. Мы на 95% уверены, что вам подойдет 50-ый, потому что вы указали, что носите 49-50 и вам обычно жмет в районе живота. Попробовал, заработало: рекомендации и импортансы адекватные.</p>
+<p>Я засиделся за выполнением тестового до четырех утра. Настолько затянуло. Было еще много идей, которые хотелось сделать, но я просто высказал их на собеседовании. Первая идея в том, что в реальности такие данные могут быть нерепрезентативны. Просто может быть, что никто (пока) не купил майку 36 размера и этого класса нет в датасете. Для решения этой проблемы я бы сделал усредненную модель, которая тренировалась бы предсказывать подходящий размер на данных всех магазинов и без учета конкретного продукта. Она говорила бы, что обычно с такими-то ответами покупают футболки размера 36. Эта модель давала бы неплохие рекомендации пока для магазина копится датасет. Потом можно обучить отдельную модель под магазин, а предсказания усредненной модели использовать как признак. Вторая идея: добавить внешних данных. Можно по таблицам размеров сказать, какой размер скорее всего подойдёт при данном росте. Киллер фича была бы. Третья идея это использовать изображения, текстовые описания и прочие фичи продуктов.</p>
+<p>По результатам мое решение было вне конкуренции и мне сказали, что я самый сильный кандидат с большим отрывом. Особенно им понравился продуктовый подход. СТО сказал, что он устал собеседовать ML-щиков которые привыкли “теребить проценты.”</p>
+<p>Мне сделали оффер на уровне US зарплаты плюс стоки, что было вдвое больше всего остального.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./parts/2_getting_a_job"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="the_golden_rule.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Золотое правило</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../3_interviewing/interviews.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Собеседования</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Личный пример: одно тестовое задание</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">100%</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">150%</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
