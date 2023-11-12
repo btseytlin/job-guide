@@ -4,11 +4,11 @@
 format: jb-book
 root: root
 parts:
-    - caption: Intro and Basics
+    - caption: Введение и основы
       chapters:
         - file: parts/1_intro/intro
         - file: parts/1_intro/hiring_process
-    - caption: Getting a Job
+    - caption: Поиск работы
       chapters:
         - file: parts/2_getting_a_job/numbers_game
         - file: parts/2_getting_a_job/resume
@@ -16,16 +16,16 @@ parts:
         - file: parts/2_getting_a_job/the_golden_rule
         - file: parts/2_getting_a_job/test_tasks
     #   - file: parts/2_getting_a_job/cases
-    - caption: Interviewing
+    - caption: Собеседования
       chapters:
         - file: parts/3_interviewing/interviews
         - file: parts/3_interviewing/behavioral_interview
         - file: parts/3_interviewing/technical_interview
         - file: parts/3_interviewing/system_design
   #       - file: parts/3_interviewing/fuckups
-    - caption: Negotiations
+    - caption: Переговоры
       chapters:
         - file: parts/4_negotiations/negotiate
-        - file: parts/4_negotations/tricks
-        - file: parts/4_negotations/theory
-        - file: parts/4_negotations/case
+        - file: parts/4_negotiations/tricks
+        - file: parts/4_negotiations/theory
+        - file: parts/4_negotiations/case
